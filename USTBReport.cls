@@ -1,6 +1,6 @@
 \NeedsTeXFormat{LaTeX2e}
 
-\ProvidesClass{USTBReport}[2018/12/2 An report thesis for USTB]
+\ProvidesClass{USTBReport}
 
 \RequirePackage{xkeyval,etoolbox}
 
