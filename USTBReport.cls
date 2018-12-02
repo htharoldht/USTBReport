@@ -93,7 +93,7 @@
     \begin{center}
       {\zihao{2} \bfseries 北京科技大学\quad 计算机与通信工程学院}\\
       \vspace*{2cm}
-      {\zihao{1} \sffamily 实验报告}\\
+      {\zihao{1} \sffamily \bfseries \makebox[8em][s]{实验报告}}\\
       \vspace*{2cm}
       \usebox{\USTB}\\
       \vspace*{2cm}
