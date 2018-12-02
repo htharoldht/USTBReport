@@ -1,5 +1,7 @@
 # USTBReport 文档类说明
 
+效果见[这里](https://github.com/htharoldht/USTBReport/blob/master/USTBReport-demo.pdf)
+
 ## 代码
 
 HTNotes-code 中使用了 minted 以及tcolorbox 排版. 具体使用方法见文件(感谢夜神的代码)
