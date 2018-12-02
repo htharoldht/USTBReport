@@ -2,6 +2,16 @@
 
 效果见[这里](https://github.com/htharoldht/USTBReport/blob/master/USTBReport-demo.pdf)
 
+## 字体
+
+- 衬线字体：
+  本实验报告使用了思源黑体Medium、DemiLight
+- 非衬线字体：
+  思源宋体Bold、ExtraLight, Adobe仿宋Regular
+- 等宽字体:
+  文泉驿微米黑Mono Light
+以上字体均需要自行下载安装
+
 ## 代码
 
 HTNotes-code 中使用了 minted 以及tcolorbox 排版. 具体使用方法见文件(感谢夜神的代码)
