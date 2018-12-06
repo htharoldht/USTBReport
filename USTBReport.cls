@@ -51,9 +51,9 @@
 
 \RequirePackage{graphicx,caption}
 \RequirePackage[font=footnotesize]{subcaption}
-  \graphicspath{{figures/}{figure/}{pictures/}{picture/}{pic/}{pics/}{image/}{images/}}
+  \graphicspath{{figures/}{figure/}{pictures/}{picture/}{fig/}{figs/}{image/}{images/}}
 \renewcommand \thefigure
-  {\ifnum \c@chapter>\z@ \thechapter-\fi \@arabic\c@figure}
+  {\ifnum \c@section>\z@ \thesection-\fi \@arabic\c@figure}
 \DeclareCaptionFont{song}{\songti}
 \captionsetup[figure]{%
   format=hang,%
@@ -67,6 +67,9 @@
   font={song,small},%
   position=top,%
 }
+
+\RequirePackage[shortlabels]{enumitem}
+  % \AddEnumerateCounter{\chinese}{\chinese}{}
 
 \def\maketitle{%
   \setcounter{section}{0}
