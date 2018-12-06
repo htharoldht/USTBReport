@@ -68,6 +68,11 @@
   position=top,%
 }
 
+\RequirePackage{array}
+\RequirePackage{booktabs,tabularx}
+\RequirePackage{makecell,interfaces-makecell,multirow}
+\newcolumntype{Y}{>{\centering\arraybackslash}X}
+
 \RequirePackage[shortlabels]{enumitem}
   % \AddEnumerateCounter{\chinese}{\chinese}{}
 
