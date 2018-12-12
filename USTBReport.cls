@@ -77,6 +77,7 @@
   % \AddEnumerateCounter{\chinese}{\chinese}{}
 
 \def\maketitle{%
+  \clearpage
   \setcounter{section}{0}
   {\centerline{\zihao{-2} \bfseries 北京科技大学实验报告}}
   \bigskip\noindent
@@ -118,16 +119,19 @@
   \end{titlepage}
 }
 
+\renewcommand{\contentsname}{\bfseries \zihao{4} \centerline{目\quad 录}}
+
 \ctexset{%
   section = {%
     numbering = false,%
-    format = \bfseries\raggedright,%
+    format += \bfseries\raggedright,%
   },%
   appendix = {%
     name = 附录,%
     number = \Alph{section},%
   }
 }
+
 
 \setmainfont{Times New Roman}
 \setsansfont{Arial}
