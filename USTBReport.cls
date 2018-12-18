@@ -143,8 +143,8 @@
 \ifUSTB@CustomFont
   \setmainfont{Times New Roman}
   \setsansfont{Arial}
-  \setCJKmainfont[BoldFont={Noto Serif CJK SC Bold},ItalicFont={AdobeFangsongStd-Regular}]{Noto Serif CJK SC ExtraLight}
-  \setCJKsansfont[BoldFont={Noto Sans S Chinese Medium}]{Noto Sans S Chinese DemiLight}
+  \setCJKmainfont[BoldFont={Source Han Serif SC SemiBold},ItalicFont={AdobeFangsongStd-Regular}]{Source Han Serif SC Light}
+  \setCJKsansfont[BoldFont={Source Han Sans SC Bold}]{Source Han Sans SC Normal}
   \setCJKmonofont{WenQuanYi Micro Hei Mono Light}
 \fi
 
