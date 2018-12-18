@@ -125,6 +125,9 @@
       \ifstrempty{\USTB@Cover@Location}{}{\zihao{-3} \makebox[5em][s]{\bfseries 实验地点}：\CJKunderline{\makebox[15em][c]{\hspace*{4em}\USTB@Cover@Location\hspace*{4em}}}\\[\bigskipamount]}
       {\zihao{-3} \makebox[5em][s]{\bfseries 实验时间}：\CJKunderline{\makebox[15em][s]{\quad\USTB@Report@Year~年~\USTB@Report@Month~月~\USTB@Report@Day~日\quad}}\\[\bigskipamount]}{}
     \end{center}
+    \clearpage
+    \mbox{}
+    \thispagestyle{empty}
   \end{titlepage}
 }
 
