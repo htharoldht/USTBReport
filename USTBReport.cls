@@ -187,6 +187,5 @@
 \RequirePackage{amsmath,amssymb,bm}
 \RequirePackage{HTNotes-math}
 \ifUSTB@Code%
-\else%
   \RequirePackage{HTNotes-code}
 \fi%
