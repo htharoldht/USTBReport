@@ -146,7 +146,7 @@
   \setsansfont{Arial}
   \setCJKmainfont[BoldFont={Source Han Serif SC SemiBold},ItalicFont={AdobeFangsongStd-Regular}]{Source Han Serif SC Light}
   \setCJKsansfont[BoldFont={Source Han Sans SC Bold}]{Source Han Sans SC Normal}
-  \setCJKmonofont{WenQuanYi Micro Hei Mono Light}
+  \setCJKmonofont{WenQuanYi Micro Hei Mono}
 \fi
 
 \RequirePackage{fancyhdr,lastpage}

@@ -1,4 +1,4 @@
-# USTBReport 文档类说明
+﻿# USTBReport 文档类说明
 
 效果见[这里](https://github.com/htharoldht/USTBReport/blob/master/USTBReport-demo.pdf)
 
@@ -11,7 +11,6 @@
 
 ``` tex
 \USTBset{
-  Code        = false,           % 不使用代码
   Course      = 微机原理与应用,  % 实验名称
   Instructor  = 万亚东,          % 指导老师
   Location    = 机电信息楼320,   % 实验地点
@@ -48,7 +47,7 @@
 
 - 等宽字体:
 
-  文泉驿微米黑 Mono Light
+  文泉驿等宽微米黑
   可以在[文泉驿官网](http://wenq.org/wqy2/index.cgi)去下载
 
 - 其他字体
@@ -60,10 +59,16 @@
 如果使用
 
 ``` tex
-\USTBset{Code = true}
+\documentclass[Code=true]{USTBReport}
 ```
 
 才启用 minted 排版代码
+
+注: 如果需要两者同时开启, 则需要使用以下命令
+
+``` tex
+\documentclass[Code=true, CustomFont=true]{USTBReport}
+```
 
 HTNotes-code 中使用了 minted 以及tcolorbox 排版. 具体使用方法见文件(感谢夜神的代码)
 
