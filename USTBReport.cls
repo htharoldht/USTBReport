@@ -4,6 +4,12 @@
 
 \RequirePackage{xkeyval,etoolbox}
 
+% Code
+\define@boolkey{USTBReport.cls}[USTB@]{Code}[false]{}
+
+% customfont
+\define@boolkey{USTBReport.cls}[USTB@]{CustomFont}[false]{}
+
 \define@cmdkeys{USTBReport.cls}[USTB@Cover@]{%
   Course,
   Instructor,
@@ -21,6 +27,8 @@
   Day,
 }
 \ExecuteOptionsX{
+  Code        = false,
+  CustomFont = false,
   Course      = {},
   Instructor  = {},
   Location    = {},
@@ -132,12 +140,13 @@
   }
 }
 
-
-\setmainfont{Times New Roman}
-\setsansfont{Arial}
-\setCJKmainfont[BoldFont={Noto Serif CJK SC Bold},ItalicFont={AdobeFangsongStd-Regular}]{Noto Serif CJK SC ExtraLight}
-\setCJKsansfont[BoldFont={Noto Sans S Chinese Medium}]{Noto Sans S Chinese DemiLight}
-\setCJKmonofont{WenQuanYi Micro Hei Mono Light}
+\ifUSTB@CustomFont
+  \setmainfont{Times New Roman}
+  \setsansfont{Arial}
+  \setCJKmainfont[BoldFont={Noto Serif CJK SC Bold},ItalicFont={AdobeFangsongStd-Regular}]{Noto Serif CJK SC ExtraLight}
+  \setCJKsansfont[BoldFont={Noto Sans S Chinese Medium}]{Noto Sans S Chinese DemiLight}
+  \setCJKmonofont{WenQuanYi Micro Hei Mono Light}
+\fi
 
 \RequirePackage{fancyhdr,lastpage}
 \fancyhf{}
@@ -176,4 +185,8 @@
 }
 
 \RequirePackage{amsmath,amssymb,bm}
-\RequirePackage{HTNotes-math,HTNotes-code}
+\RequirePackage{HTNotes-math}
+\ifUSTB@Code%
+\else%
+  \RequirePackage{HTNotes-code}
+\fi%
