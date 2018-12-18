@@ -1,8 +1,11 @@
 % !TEX options = --shell-escape
 % !TEX program = xelatex
 \documentclass{USTBReport}
+% 使用用户字体
+% \documentclass[CustomFont=true]{USTBReport}
 
 \USTBset{
+  Code        = false,           % 不使用代码
   Course      = 微机原理与应用,  % 实验名称
   Instructor  = 万亚东,          % 指导老师
   Location    = 机电信息楼320,   % 实验地点
@@ -36,7 +39,6 @@
 
 \section{实验结果与分析：}
 
-\vspace*{1cm}
 
 \maketitle
 
