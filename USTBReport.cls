@@ -81,6 +81,7 @@
 \RequirePackage{makecell,interfaces-makecell,multirow}
 \newcolumntype{Y}{>{\centering\arraybackslash}X}
 
+\RequirePackage{pifont}
 \RequirePackage[shortlabels]{enumitem}
   % \AddEnumerateCounter{\chinese}{\chinese}{}
 
