@@ -73,6 +73,7 @@
 HTNotes-code 中使用了 minted 以及tcolorbox 排版. 具体使用方法见文件(感谢夜神的代码)
 
 ### minted环境配置
+
 1、先装python，装比较新的版本，会有自动安装pip和添加环境变量，就不用配置了
      （下载地址：Download Python | Python.org
                         https://www.python.org/downloads/）
