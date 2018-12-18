@@ -3,12 +3,13 @@
 效果见[这里](https://github.com/htharoldht/USTBReport/blob/master/USTBReport-demo.pdf)
 
 本模板符合北京科技大学实验报告的模板, 并添加了一份计算机与通信工程学院的实验报告封面.
+
 主要用于对实验报告的撰写, 提供一个实验报告的实现机制.
 设置采用 xkeyval 包, 实现了键值对的方式指定常量.
 
 ## 接口
 
-```
+``` tex
 \USTBset{
   Code        = false,           % 不使用代码
   Course      = 微机原理与应用,  % 实验名称
@@ -27,34 +28,41 @@
 
 ## 字体
 如果使用
-'''
+
+``` tex
 \documentclass[CustomFont=true]{USTBReport}
-'''
+```
+
 才启用用户字体
 
 以下为用户字体
 - 衬线字体：
+
   本实验报告使用了思源黑体 Medium、DemiLight
   可以在[这里](https://mirrors.tuna.tsinghua.edu.cn/adobe-fonts/source-han-serif/OTF/SimplifiedChinese/)下载
 
 - 非衬线字体：
+
   思源宋体 Bold、ExtraLight, Adobe 仿宋 Regular
   可以在[这里](https://mirrors.tuna.tsinghua.edu.cn/adobe-fonts/source-han-sans/OTF/SimplifiedChinese/)下载
 
 - 等宽字体:
+
   文泉驿微米黑 Mono Light
   可以在[文泉驿官网](http://wenq.org/wqy2/index.cgi)去下载
 
 - 其他字体
-  此外还需要有Times New Roman、Arial、AdobeFangsongStd-Regular
 
+  此外还需要有Times New Roman、Arial、AdobeFangsongStd-Regular
 
 ## 代码
 
 如果使用
-'''
+
+``` tex
 \USTBset{Code = true}
-'''
+```
+
 才启用 minted 排版代码
 
 HTNotes-code 中使用了 minted 以及tcolorbox 排版. 具体使用方法见文件(感谢夜神的代码)
